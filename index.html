@@ -3,10 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Portfolio</title>
-    <meta name="description" content="Professional portfolio showcasing my projects and skills">
+    <title>Your Name | Network & Security Engineer</title>
+    <meta name="description" content="Professional portfolio of a Network and Security Engineer showcasing expertise in infrastructure, cybersecurity, and network solutions">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Additional Network/Security Specific Styles */
+        .network-icon {
+            color: #3b82f6;
+        }
+        .security-icon {
+            color: #ef4444;
+        }
+        .cert-badge {
+            display: inline-block;
+            background: #f3f4f6;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            margin: 0.25rem;
+            font-size: 0.9rem;
+            border: 1px solid #e5e7eb;
+        }
+        .cert-badge.blue {
+            background: #dbeafe;
+            border-color: #bfdbfe;
+        }
+        .cert-badge.red {
+            background: #fee2e2;
+            border-color: #fecaca;
+        }
+        .network-diagram {
+            background: white;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            max-width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -18,6 +51,7 @@
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
@@ -32,11 +66,11 @@
             <div class="container">
                 <div class="hero-content">
                     <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
-                    <h2>A Passionate Developer</h2>
-                    <p>I build digital experiences that are fast, accessible, and visually appealing.</p>
+                    <h2>Network & Security Engineer</h2>
+                    <p>Designing secure, scalable network infrastructures and implementing robust cybersecurity solutions for enterprise environments.</p>
                     <div class="cta-buttons">
-                        <a href="projects.html" class="btn btn-primary">View My Work</a>
-                        <a href="about.html" class="btn btn-secondary">About Me</a>
+                        <a href="projects.html" class="btn btn-primary">View My Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -45,48 +79,127 @@
             </div>
         </section>
 
-        <section class="skills">
+        <section class="expertise">
             <div class="container">
-                <h2 class="section-title">My Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <i class="fas fa-code"></i>
-                        <h3>Web Development</h3>
-                        <p>HTML, CSS, JavaScript, React, Node.js</p>
+                <h2 class="section-title">Areas of Expertise</h2>
+                <div class="expertise-grid">
+                    <div class="expertise-card">
+                        <i class="fas fa-network-wired network-icon"></i>
+                        <h3>Network Architecture</h3>
+                        <ul>
+                            <li>Enterprise network design</li>
+                            <li>Routing & Switching (BGP, OSPF, EIGRP)</li>
+                            <li>SD-WAN & Cloud Networking</li>
+                            <li>Wireless Network Design</li>
+                        </ul>
                     </div>
-                    <div class="skill-card">
-                        <i class="fas fa-mobile-alt"></i>
-                        <h3>Responsive Design</h3>
-                        <p>Creating layouts that work on any device</p>
+                    <div class="expertise-card">
+                        <i class="fas fa-shield-alt security-icon"></i>
+                        <h3>Cybersecurity</h3>
+                        <ul>
+                            <li>Firewall Configuration</li>
+                            <li>Intrusion Detection/Prevention</li>
+                            <li>Vulnerability Management</li>
+                            <li>Security Compliance</li>
+                        </ul>
                     </div>
-                    <div class="skill-card">
-                        <i class="fas fa-server"></i>
-                        <h3>Backend</h3>
-                        <p>API development, databases, server management</p>
+                    <div class="expertise-card">
+                        <i class="fas fa-server network-icon"></i>
+                        <h3>Infrastructure</h3>
+                        <ul>
+                            <li>Data Center Operations</li>
+                            <li>Virtualization & Cloud</li>
+                            <li>Network Automation</li>
+                            <li>Disaster Recovery</li>
+                        </ul>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="certifications">
+            <div class="container">
+                <h2 class="section-title">Certifications</h2>
+                <div class="certs-container">
+                    <span class="cert-badge blue"><i class="fab fa-cisco"></i> CCIE Enterprise Infrastructure</span>
+                    <span class="cert-badge blue"><i class="fab fa-cisco"></i> CCNP Enterprise</span>
+                    <span class="cert-badge red"><i class="fas fa-shield-alt"></i> CISSP</span>
+                    <span class="cert-badge blue"><i class="fas fa-cloud"></i> AWS Advanced Networking</span>
+                    <span class="cert-badge red"><i class="fas fa-lock"></i> CEH</span>
+                    <span class="cert-badge blue"><i class="fas fa-network-wired"></i> JNCIP-ENT</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="technologies">
+            <div class="container">
+                <h2 class="section-title">Technologies I Work With</h2>
+                <div class="tech-logos">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg" alt="Cisco" title="Cisco">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Juniper_Networks_logo.svg" alt="Juniper" title="Juniper">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" title="AWS">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Palo_Alto_Networks_Logo.svg" alt="Palo Alto" title="Palo Alto">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Check_Point_logo.svg" alt="Check Point" title="Check Point">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Fortinet_logo.svg" alt="Fortinet" title="Fortinet">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Zscaler_logo.svg" alt="Zscaler" title="Zscaler">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Aruba_Networks_Logo.svg" alt="Aruba" title="Aruba">
                 </div>
             </div>
         </section>
 
         <section class="featured-project">
             <div class="container">
-                <h2 class="section-title">Featured Project</h2>
+                <h2 class="section-title">Recent Project</h2>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="assets/projects/project1.jpg" alt="Project Name">
+                        <img src="assets/projects/network-design.jpg" alt="Enterprise Network Design">
                     </div>
                     <div class="project-details">
-                        <h3>Project Title</h3>
-                        <p>A brief description of the project and what technologies were used. Explain the problem it solves.</p>
+                        <h3>Enterprise Network Modernization</h3>
+                        <p>Designed and implemented a secure, high-availability network infrastructure for a Fortune 500 company, reducing downtime by 99.9% and improving threat detection capabilities.</p>
                         <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
+                            <span>Cisco ISE</span>
+                            <span>Palo Alto Firewalls</span>
+                            <span>SD-WAN</span>
+                            <span>Zero Trust</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-primary">Live Demo</a>
-                            <a href="#" class="btn btn-secondary">View Code</a>
+                            <a href="projects.html" class="btn btn-primary">Case Study</a>
+                            <a href="#" class="btn btn-secondary">Network Diagram</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p><i class="fas fa-envelope"></i> your.email@example.com</p>
+                        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Your City, Country</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -98,21 +211,22 @@
             <div class="footer-content">
                 <div class="footer-about">
                     <h3>YourName</h3>
-                    <p>Building digital experiences that matter.</p>
+                    <p>Network & Security Solutions Architect</p>
                 </div>
                 <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="projects.html">Projects</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">
                     <h3>Connect</h3>
                     <ul>
-                        <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
                         <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
                         <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
                     </ul>
                 </div>

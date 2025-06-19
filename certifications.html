@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Certifications</title>
+    <meta name="description" content="My professional certifications in networking and security">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .cert-category {
+            margin: 3rem 0 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        .cert-item {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .cert-logo {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f3f4f6;
+            border-radius: 0.5rem;
+            flex-shrink: 0;
+        }
+        .cert-logo img {
+            max-width: 60px;
+            max-height: 60px;
+        }
+        .cert-details h3 {
+            margin-bottom: 0.5rem;
+        }
+        .cert-date {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        .cert-id {
+            font-family: monospace;
+            background: #f3f4f6;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.85rem;
+        }
+        .network-icon {
+            color: #3b82f6;
+        }
+        .security-icon {
+            color: #ef4444;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">YourName</a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="certifications.html" class="active">Certifications</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="certifications-page">
+            <div class="container">
+                <h1 class="section-title">My Certifications</h1>
+                
+                <h3 class="cert-category"><i class="fas fa-network-wired network-icon"></i> Networking Certifications</h3>
+                
+                <!-- CCIE -->
+                <div class="cert-item">
+                    <div class="cert-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg" alt="Cisco">
+                    </div>
+                    <div class="cert-details">
+                        <h3>CCIE Enterprise Infrastructure</h3>
+                        <div class="cert-date">Issued: June 2022 | Expires: June 2025</div>
+                        <p>The Cisco Certified Internetwork Expert (CCIE) Enterprise Infrastructure certification validates expert-level knowledge of enterprise infrastructure technologies.</p>
+                        <div class="cert-id">ID: CCIE #12345</div>
+                    </div>
+                </div>
+                
+                <!-- CCNP -->
+                <div class="cert-item">
+                    <div class="cert-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg" alt="Cisco">
+                    </div>
+                    <div class="cert-details">
+                        <h3>CCNP Enterprise</h3>
+                        <div class="cert-date">Issued: March 2020 | Expires: March 2025</div>
+                        <p>Cisco Certified Network Professional (CCNP) Enterprise certification demonstrates advanced knowledge of enterprise networking solutions.</p>
+                        <div class="cert-id">ID: CSCO12345678</div>
+                    </div>
+                </div>
+                
+                <!-- AWS -->
+                <div class="cert-item">
+                    <div class="cert-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
+                    </div>
+                    <div class="cert-details">
+                        <h3>AWS Certified Advanced Networking - Specialty</h3>
+                        <div class="cert-date">Issued: January 2021 | Expires: January 2024</div>
+                        <p>Validates advanced technical skills and experience in designing and implementing AWS and hybrid network architectures.</p>
+                        <div class="cert-id">ID: AWS123456789ABC</div>
+                    </div>
+                </div>
+                
+                <h3 class="cert-category"><i class="fas fa-shield-alt security-icon"></i> Security Certifications</h3>
+                
+                <!-- CISSP -->
+                <div class="cert-item">
+                    <div class="cert-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/ISC2_logo.svg" alt="ISC2">
+                    </div>
+                    <div class="cert-details">
+                        <h3>Certified Information Systems Security Professional (CISSP)</h3>
+                        <div class="cert-date">Issued: September 2021 | Expires: September 2026</div>
+                        <p>The CISSP is a globally recognized certification in the field of information security, covering security and risk management, asset security, security architecture, and more.</p>
+                        <div class="cert-id">ID: 123456</div>
+                    </div>
+                </div>
+                
+                <!-- Palo Alto -->
+                <div class="cert-item">
+                    <div class="cert-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Palo_Alto_Networks_Logo.svg" alt="Palo Alto">
+                    </div>
+                    <div class="cert-details">
+                        <h3>Palo Alto Networks Certified Network Security Engineer (PCNSE)</h3>
+                        <div class="cert-date">Issued: May 2022 | Expires: May 2024</div>
+                        <p>Demonstrates expertise with Palo Alto Networks next-generation firewalls and Panorama management.</p>
+                        <div class="cert-id">ID: PCNSE12345</div>
+                    </div>
+                </div>
+                
+                <!-- CEH -->
+                <div class="cert-item">
+                    <div class="cert-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/EC-Council_logo.svg" alt="EC-Council">
+                    </div>
+                    <div class="cert-details">
+                        <h3>Certified Ethical Hacker (CEH)</h3>
+                        <div class="cert-date">Issued: November 2020 | Expires: November 2023</div>
+                        <p>The CEH certification validates skills in identifying vulnerabilities in target systems and using the same knowledge and tools as a malicious hacker.</p>
+                        <div class="cert-id">ID: ECC123456789</div>
+                    </div>
+                </div>
+                
+                <h3 class="cert-category"><i class="fas fa-cloud network-icon"></i> Other Certifications</h3>
+                
+                <!-- VMware -->
+                <div class="cert-item">
+                    <div class="cert-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Vmware_logo.svg" alt="VMware">
+                    </div>
+                    <div class="cert-details">
+                        <h3>VMware Certified Professional - Network Virtualization (VCP-NV)</h3>
+                        <div class="cert-date">Issued: August 2021 | Expires: August 2023</div>
+                        <p>Validates skills in implementing and managing VMware NSX network virtualization platforms.</p>
+                        <div class="cert-id">ID: VCPNV123456</div>
+                    </div>
+                </div>
+                
+                <!-- ITIL -->
+                <div class="cert-item">
+                    <div class="cert-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/AXELOS_logo.svg" alt="AXELOS">
+                    </div>
+                    <div class="cert-details">
+                        <h3>ITIL 4 Foundation</h3>
+                        <div class="cert-date">Issued: February 2022 | Does not expire</div>
+                        <p>Demonstrates understanding of the ITIL framework for IT service management.</p>
+                        <div class="cert-id">ID: ITIL123456789</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>YourName</h3>
+                    <p>Network & Security Solutions Architect</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> YourName. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

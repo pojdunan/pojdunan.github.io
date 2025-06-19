@@ -591,3 +591,413 @@ img {
         grid-template-columns: 1fr;
     }
 }
+
+/* Network/Security Specific Styles */
+.expertise {
+    padding: 5rem 0;
+    background-color: #f9fafb;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.expertise-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: var(--rounded);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.expertise-card:hover {
+    transform: translateY(-5px);
+}
+
+.expertise-card i {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.expertise-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--dark-color);
+}
+
+.expertise-card ul {
+    margin-left: 1rem;
+}
+
+.expertise-card li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.expertise-card li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+.certifications {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.certs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.technologies {
+    padding: 5rem 0;
+    background-color: #f9fafb;
+    text-align: center;
+}
+
+.tech-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.tech-logos img {
+    height: 40px;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.tech-logos img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.contact {
+    padding: 5rem 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.contact-info {
+    background-color: white;
+    padding: 2rem;
+    border-radius: var(--rounded);
+    box-shadow: var(--shadow);
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--light-color);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: var(--rounded);
+    box-shadow: var(--shadow);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: var(--rounded);
+    font-family: inherit;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+@media (max-width: 768px) {
+    .tech-logos img {
+        height: 30px;
+    }
+}
+
+/* Projects Page Specific */
+.projects-section {
+    padding: 8rem 0 4rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.project-item {
+    background-color: white;
+    border-radius: var(--rounded);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.project-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Certifications Page Specific */
+.certifications-page {
+    padding: 8rem 0 4rem;
+}
+
+/* About Page Specific */
+.about-page {
+    padding: 8rem 0 4rem;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: var(--rounded);
+    box-shadow: var(--shadow);
+}
+
+.about-text h2 {
+    margin: 2rem 0 1rem;
+    font-size: 1.75rem;
+}
+
+.about-text h2 i {
+    margin-right: 0.5rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.skill-category h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.skill-category ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.skill-category li {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.skill-category li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+.about-cta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+@media (max-width: 992px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-image {
+        max-width: 400px;
+        margin: 0 auto 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-links {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile Menu Backdrop */
+.mobile-menu-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-backdrop {
+        display: block;
+    }
+    
+    .nav {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: calc(100vh - 80px);
+        background-color: white;
+        padding: 2rem;
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+        z-index: 100;
+        overflow-y: auto;
+    }
+    
+    .nav.active {
+        left: 0;
+    }
+    
+    .nav ul {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+/* Touch device adjustments */
+.touch-device .skill-card:hover,
+.touch-device .project-item:hover,
+.touch-device .cert-item:hover {
+    transform: none !important;
+}
+
+/* Certifications TOC for mobile */
+.cert-toc {
+    background: #f3f4f6;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.cert-toc h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.cert-toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cert-toc li {
+    margin-bottom: 0.5rem;
+}
+
+.cert-toc a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+@media (min-width: 769px) {
+    .cert-toc {
+        display: none;
+    }
+}
+
+/* Performance optimizations */
+img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+img[loading="lazy"].loaded {
+    opacity: 1;
+}

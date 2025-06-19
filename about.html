@@ -4,9 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name | About</title>
-    <meta name="description" content="Learn more about me and my skills">
+    <meta name="description" content="About me - Network and Security Engineer">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-timeline {
+            position: relative;
+            padding-left: 2rem;
+            margin: 3rem 0;
+        }
+        .about-timeline::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: #e5e7eb;
+        }
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #3b82f6;
+            border: 2px solid white;
+        }
+        .timeline-date {
+            font-weight: 600;
+            color: #6b7280;
+            margin-bottom: 0.5rem;
+        }
+        .timeline-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        .timeline-company {
+            font-weight: 600;
+            color: #3b82f6;
+            margin-bottom: 0.5rem;
+        }
+        .network-icon {
+            color: #3b82f6;
+        }
+        .security-icon {
+            color: #ef4444;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -18,6 +69,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
                     <li><a href="about.html" class="active">About</a></li>
                 </ul>
             </nav>
@@ -28,7 +80,7 @@
     </header>
 
     <main>
-        <section class="about-section">
+        <section class="about-page">
             <div class="container">
                 <div class="about-content">
                     <div class="about-image">
@@ -36,48 +88,84 @@
                     </div>
                     <div class="about-text">
                         <h1 class="section-title">About Me</h1>
-                        <p>Hello! I'm [Your Name], a passionate developer with [X] years of experience creating digital solutions. I specialize in [your specialties] and love tackling complex problems with elegant solutions.</p>
-                        <p>My journey in tech began when [your origin story]. Since then, I've worked with various technologies including [list main technologies] to build [types of projects you've built].</p>
-                        <p>When I'm not coding, you can find me [your hobbies/interests]. I believe in continuous learning and staying updated with the latest industry trends.</p>
+                        <p>Hello! I'm <strong>Your Name</strong>, a passionate Network and Security Engineer with over 10 years of experience designing, implementing, and securing enterprise networks.</p>
                         
+                        <p>My journey in networking began when I first configured a home router and became fascinated with how data travels across networks. This curiosity evolved into a career where I've had the privilege to work with organizations ranging from startups to Fortune 500 companies, helping them build secure, scalable network infrastructures.</p>
+                        
+                        <h2><i class="fas fa-network-wired network-icon"></i> Professional Experience</h2>
+                        <div class="about-timeline">
+                            <!-- Experience 1 -->
+                            <div class="timeline-item">
+                                <div class="timeline-date">2020 - Present</div>
+                                <h3 class="timeline-title">Senior Network Security Engineer</h3>
+                                <div class="timeline-company">Global Tech Solutions Inc.</div>
+                                <p>Lead architect for enterprise network security, responsible for designing and implementing Zero Trust architectures, next-gen firewalls, and SIEM solutions across global infrastructure.</p>
+                            </div>
+                            
+                            <!-- Experience 2 -->
+                            <div class="timeline-item">
+                                <div class="timeline-date">2016 - 2020</div>
+                                <h3 class="timeline-title">Network Architect</h3>
+                                <div class="timeline-company">Enterprise Systems Corp</div>
+                                <p>Designed and implemented SD-WAN solutions across 50+ sites, reducing WAN costs by 60% while improving performance. Led migration from MPLS to hybrid cloud networking.</p>
+                            </div>
+                            
+                            <!-- Experience 3 -->
+                            <div class="timeline-item">
+                                <div class="timeline-date">2012 - 2016</div>
+                                <h3 class="timeline-title">Network Engineer</h3>
+                                <div class="timeline-company">DataNet Services</div>
+                                <p>Implemented and maintained enterprise networks for clients across various industries. Specialized in Cisco routing/switching and firewall configurations.</p>
+                            </div>
+                        </div>
+                        
+                        <h2><i class="fas fa-shield-alt security-icon"></i> Security Philosophy</h2>
+                        <p>I believe security should be built into networks from the ground up, not bolted on as an afterthought. My approach combines:</p>
+                        <ul>
+                            <li><strong>Zero Trust Principles:</strong> Verify explicitly, least privilege access, assume breach</li>
+                            <li><strong>Defense in Depth:</strong> Multiple layers of security controls</li>
+                            <li><strong>Continuous Monitoring:</strong> Real-time threat detection and response</li>
+                            <li><strong>Automation:</strong> Consistent enforcement of security policies</li>
+                        </ul>
+                        
+                        <h2><i class="fas fa-network-wired network-icon"></i> Technical Proficiencies</h2>
                         <div class="about-skills">
-                            <h2>My Skills</h2>
-                            <div class="skills-list">
+                            <div class="skills-grid">
                                 <div class="skill-category">
-                                    <h3>Frontend</h3>
+                                    <h3>Networking</h3>
                                     <ul>
-                                        <li>HTML5</li>
-                                        <li>CSS3/Sass</li>
-                                        <li>JavaScript (ES6+)</li>
-                                        <li>React.js</li>
-                                        <li>Vue.js</li>
+                                        <li>Cisco IOS/NX-OS</li>
+                                        <li>BGP/OSPF/EIGRP</li>
+                                        <li>SD-WAN (Viptela, Velocloud)</li>
+                                        <li>MPLS/VPLS</li>
+                                        <li>Wireless (Cisco, Aruba)</li>
                                     </ul>
                                 </div>
                                 <div class="skill-category">
-                                    <h3>Backend</h3>
+                                    <h3>Security</h3>
                                     <ul>
-                                        <li>Node.js</li>
-                                        <li>Express</li>
-                                        <li>Python</li>
-                                        <li>Django</li>
-                                        <li>MongoDB</li>
+                                        <li>Firewalls (Palo Alto, Fortinet)</li>
+                                        <li>IDS/IPS (Cisco Firepower)</li>
+                                        <li>SIEM (Splunk, QRadar)</li>
+                                        <li>Endpoint Protection</li>
+                                        <li>VPN/Zero Trust</li>
                                     </ul>
                                 </div>
                                 <div class="skill-category">
-                                    <h3>Tools</h3>
+                                    <h3>Cloud/Automation</h3>
                                     <ul>
-                                        <li>Git/GitHub</li>
-                                        <li>Docker</li>
-                                        <li>VS Code</li>
-                                        <li>Figma</li>
-                                        <li>Postman</li>
+                                        <li>AWS Networking</li>
+                                        <li>Azure Networking</li>
+                                        <li>Python for Networking</li>
+                                        <li>Ansible</li>
+                                        <li>Terraform</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="about-cta">
-                            <a href="projects.html" class="btn btn-primary">View My Work</a>
+                            <a href="projects.html" class="btn btn-primary">View My Projects</a>
                             <a href="#" class="btn btn-secondary">Download Resume</a>
                         </div>
                     </div>
@@ -91,21 +179,22 @@
             <div class="footer-content">
                 <div class="footer-about">
                     <h3>YourName</h3>
-                    <p>Building digital experiences that matter.</p>
+                    <p>Network & Security Solutions Architect</p>
                 </div>
                 <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="projects.html">Projects</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">
                     <h3>Connect</h3>
                     <ul>
-                        <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
                         <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
                         <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
                     </ul>
                 </div>

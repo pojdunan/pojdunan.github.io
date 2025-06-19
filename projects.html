@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Projects</title>
-    <meta name="description" content="Check out my latest projects and work">
+    <title>Your Name | Network Projects</title>
+    <meta name="description" content="Showcase of network infrastructure and security projects">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .project-category {
+            margin: 3rem 0 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        .project-tag {
+            background: #e5e7eb;
+            padding: 0.25rem 0.75rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+        }
+        .network-icon {
+            color: #3b82f6;
+        }
+        .security-icon {
+            color: #ef4444;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -18,6 +43,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
@@ -31,23 +57,26 @@
         <section class="projects-section">
             <div class="container">
                 <h1 class="section-title">My Projects</h1>
+                
+                <h3 class="project-category"><i class="fas fa-network-wired network-icon"></i> Network Infrastructure</h3>
                 <div class="projects-grid">
                     <!-- Project 1 -->
                     <div class="project-item">
                         <div class="project-img">
-                            <img src="assets/projects/project1.jpg" alt="Project 1">
+                            <img src="assets/projects/enterprise-network.jpg" alt="Enterprise Network Upgrade">
                         </div>
                         <div class="project-info">
-                            <h3>Project Title 1</h3>
-                            <p>A brief description of the project and what it does. Mention the technologies used.</p>
-                            <div class="project-tech">
-                                <span>React</span>
-                                <span>Node.js</span>
-                                <span>MongoDB</span>
+                            <h3>Enterprise Network Modernization</h3>
+                            <p>Designed and implemented a complete network overhaul for a Fortune 500 company, replacing legacy hardware with Cisco Catalyst 9000 series switches and implementing SD-Access.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Cisco</span>
+                                <span class="project-tag">SD-Access</span>
+                                <span class="project-tag">DNA Center</span>
+                                <span class="project-tag">IS-IS</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" class="btn btn-primary">Live Demo</a>
-                                <a href="#" class="btn btn-secondary">View Code</a>
+                                <a href="#" class="btn btn-primary">Case Study</a>
+                                <a href="#" class="btn btn-secondary">Network Diagram</a>
                             </div>
                         </div>
                     </div>
@@ -55,39 +84,110 @@
                     <!-- Project 2 -->
                     <div class="project-item">
                         <div class="project-img">
-                            <img src="assets/projects/project2.jpg" alt="Project 2">
+                            <img src="assets/projects/sd-wan.jpg" alt="SD-WAN Implementation">
                         </div>
                         <div class="project-info">
-                            <h3>Project Title 2</h3>
-                            <p>A brief description of the project and what it does. Mention the technologies used.</p>
-                            <div class="project-tech">
-                                <span>JavaScript</span>
-                                <span>CSS</span>
-                                <span>HTML</span>
+                            <h3>Global SD-WAN Deployment</h3>
+                            <p>Led the migration from MPLS to SD-WAN across 45 global sites, reducing WAN costs by 60% while improving application performance with dynamic path selection.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Viptela</span>
+                                <span class="project-tag">AWS</span>
+                                <span class="project-tag">BGP</span>
+                                <span class="project-tag">QoS</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" class="btn btn-primary">Live Demo</a>
-                                <a href="#" class="btn btn-secondary">View Code</a>
+                                <a href="#" class="btn btn-primary">Case Study</a>
+                                <a href="#" class="btn btn-secondary">Design Docs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="project-category"><i class="fas fa-shield-alt security-icon"></i> Security Implementations</h3>
+                <div class="projects-grid">
+                    <!-- Project 3 -->
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="assets/projects/zero-trust.jpg" alt="Zero Trust Architecture">
+                        </div>
+                        <div class="project-info">
+                            <h3>Zero Trust Network Implementation</h3>
+                            <p>Architected and deployed a Zero Trust security model using Palo Alto Prisma Access, Cisco ISE, and Okta for identity management, reducing attack surface by 85%.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Zero Trust</span>
+                                <span class="project-tag">Palo Alto</span>
+                                <span class="project-tag">Cisco ISE</span>
+                                <span class="project-tag">SASE</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-primary">Case Study</a>
+                                <a href="#" class="btn btn-secondary">Security Policy</a>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Project 3 -->
+                    <!-- Project 4 -->
                     <div class="project-item">
                         <div class="project-img">
-                            <img src="assets/projects/project3.jpg" alt="Project 3">
+                            <img src="assets/projects/siem.jpg" alt="SIEM Deployment">
                         </div>
                         <div class="project-info">
-                            <h3>Project Title 3</h3>
-                            <p>A brief description of the project and what it does. Mention the technologies used.</p>
-                            <div class="project-tech">
-                                <span>Python</span>
-                                <span>Django</span>
-                                <span>PostgreSQL</span>
+                            <h3>Enterprise SIEM Deployment</h3>
+                            <p>Deployed Splunk Enterprise Security across the organization, creating custom correlation searches and dashboards that reduced incident response time by 70%.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Splunk</span>
+                                <span class="project-tag">SIEM</span>
+                                <span class="project-tag">Threat Hunting</span>
+                                <span class="project-tag">Log Analysis</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" class="btn btn-primary">Live Demo</a>
-                                <a href="#" class="btn btn-secondary">View Code</a>
+                                <a href="#" class="btn btn-primary">Case Study</a>
+                                <a href="#" class="btn btn-secondary">Use Cases</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="project-category"><i class="fas fa-cloud network-icon"></i> Cloud Networking</h3>
+                <div class="projects-grid">
+                    <!-- Project 5 -->
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="assets/projects/aws-network.jpg" alt="AWS Networking">
+                        </div>
+                        <div class="project-info">
+                            <h3>AWS Hybrid Cloud Architecture</h3>
+                            <p>Designed and implemented a secure hybrid cloud architecture with AWS Transit Gateway, Direct Connect, and NSX-T for seamless on-prem to cloud connectivity.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">AWS</span>
+                                <span class="project-tag">Transit Gateway</span>
+                                <span class="project-tag">Direct Connect</span>
+                                <span class="project-tag">NSX-T</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-primary">Case Study</a>
+                                <a href="#" class="btn btn-secondary">Architecture</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 6 -->
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="assets/projects/azure-network.jpg" alt="Azure Networking">
+                        </div>
+                        <div class="project-info">
+                            <h3>Azure Virtual WAN Deployment</h3>
+                            <p>Implemented Azure Virtual WAN with SD-WAN integration to connect 30 branch offices to Azure resources with optimized routing and security.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Azure</span>
+                                <span class="project-tag">Virtual WAN</span>
+                                <span class="project-tag">ExpressRoute</span>
+                                <span class="project-tag">Firewall</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-primary">Case Study</a>
+                                <a href="#" class="btn btn-secondary">Design Docs</a>
                             </div>
                         </div>
                     </div>
@@ -101,21 +201,22 @@
             <div class="footer-content">
                 <div class="footer-about">
                     <h3>YourName</h3>
-                    <p>Building digital experiences that matter.</p>
+                    <p>Network & Security Solutions Architect</p>
                 </div>
                 <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="projects.html">Projects</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">
                     <h3>Connect</h3>
                     <ul>
-                        <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
                         <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
                         <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
                     </ul>
                 </div>
